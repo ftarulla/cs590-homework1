@@ -89,6 +89,8 @@ char* warp_translate_window = "(4) Translate 5pixels left-bottom";
    namedWindow( warp_translate_window, CV_WINDOW_AUTOSIZE );
    imshow( warp_translate_window, warp_translate_dst );
 
+   imwrite( strcat(argv[1], "_translate_a.jpg"), warp_translate_dst);
+
    /// Wait until user exits the program
    waitKey(0);
 

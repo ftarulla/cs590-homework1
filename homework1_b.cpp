@@ -86,13 +86,13 @@ char* warp_translate_window = "(4) Translate 5pixels left-bottom";
    namedWindow( warp_rotate_window, CV_WINDOW_AUTOSIZE );
    imshow( warp_rotate_window, warp_rotate_dst );
    //
-   imwrite( strcat(argv[1], "_rotate.jpg"), warp_rotate_dst);
+   imwrite( strcat(argv[1], "_rotate_a.jpg"), warp_rotate_dst);
 
 
    namedWindow( warp_translate_window, CV_WINDOW_AUTOSIZE );
    imshow( warp_translate_window, warp_translate_dst );
    //
-   imwrite( strcat(argv[1], "_translate.jpg"), warp_translate_dst);
+   imwrite( strcat(argv[1], "_translate_a.jpg"), warp_translate_dst);
 
    /// Wait until user exits the program
    waitKey(0);
